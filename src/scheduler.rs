@@ -83,7 +83,7 @@ pub(crate) fn tui_schedule_runner(mut app: App) -> AppExit {
     let mut app_exit_event_reader = ManualEventReader::<AppExit>::default();
 
     while let Ok(Some(_tick_duration)) = tick(&mut app, &mut app_exit_event_reader) {
-        // more stuff to do        
+        // more stuff to do
     }
     println!("Exiting the scheduler loop");
     AppExit::Success
